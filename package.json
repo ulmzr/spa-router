@@ -4,5 +4,13 @@
   "description": "A minimalistic version of router for SPA applications.",
   "author": "Yulmizar",
   "module": "index.js",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulmzr/spa-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ulmzr/spa-router/issues"
+  },
+  "homepage": "https://github.com/ulmzr/spa-router#readme"
 }
