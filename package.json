@@ -1,0 +1,7 @@
+{
+  "name": "@dififa/spa-router",
+  "version": "0.1.0",
+  "module": "index.js",
+  "description": "A minimalistic version of router for SPA applications.",
+  "type": "module"
+}
