@@ -6,26 +6,24 @@ Usage example with MalinaJS:
 
 In Script section,
 
-```js
 import Router from '...'
 
 let cmp,
-    params = {},
-    query = {}
+params = {},
+query = {}
 
 const router = new Router()
 
 router
-    .on('/', import('./Home.xht'))
-    .on('/about/:name', import('./About.xht'))
-    .on('/setting', import('./Setting.xht'))
-    .on('/users/:id', import('./Users.xht'))
-    .on('/posts/:postId/comments', import('./Posts.xht'))
-    .on404(import('./404.xht'))
-    .listen((matchedRoute) => {
-        ;({ cmp, params, query } = matchedRoute)
-    })
-```
+.on('/', import('./Home.xht'))
+.on('/about/:name', import('./About.xht'))
+.on('/setting', import('./Setting.xht'))
+.on('/users/:id', import('./Users.xht'))
+.on('/posts/:postId/comments', import('./Posts.xht'))
+.on404(import('./404.xht'))
+.listen((matchedRoute) => {
+({ cmp, params, query } = matchedRoute)
+})
 
 In Body section,
 
