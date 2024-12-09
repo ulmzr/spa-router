@@ -9,9 +9,7 @@ In Script section,
 ```js
 import Router from '...'
 
-let cmp,
-    params = {},
-    query = {}
+let cmp, params = {}, query = {}
 
 const router = new Router()
 
@@ -23,7 +21,7 @@ router
     .on('/posts/:postId/comments', import('./Posts.xht'))
     .on404(import('./404.xht'))
     .listen((matchedRoute) => {
-        ;({ cmp, params, query } = matchedRoute)
+        ({ cmp, params, query } = matchedRoute)
     })
 ```
 
@@ -39,6 +37,6 @@ In Body section,
 </ul>
 
 {#if cmp}
-<component:cmp {params} {query} />
+    <component:cmp {params} {query} />
 {/if}
 ```
